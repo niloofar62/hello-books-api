@@ -15,7 +15,12 @@ def create_app(test_config=None):
     #from app.models.book import Book
 
     db.init_app(app)
+<<<<<<< Updated upstream
     migrate.init_app(app, db)
+=======
+    migrate.init_app(app,db)
+    #from app.models.book import Book
+>>>>>>> Stashed changes
 
     # Register Blueprints here
     from .routes import books_bp
